@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPP | Bem-vindo</title>
+    <!-- Tailwind CSS CDN para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Inter via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                    SAPP
+                </span>
+            </div>
+            <nav class="flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-indigo-400 transition-colors">Recursos</a>
+                <a href="#about" class="hover:text-indigo-400 transition-colors">Sobre</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <main class="flex-grow flex flex-col justify-center items-center text-center px-6 py-20 max-w-4xl mx-auto">
+        <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-6">
+            Projeto SAPP no GitHub Pages
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Construa o futuro com a plataforma <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-cyan-400 bg-clip-text text-transparent">SAPP</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 font-normal">
+            Sua nova página está no ar. Use esta estrutura para apresentar sua aplicação, documentação ou portfólio de forma rápida e elegante.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="#features" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all text-center">
+                Explorar Recursos
+            </a>
+            <a href="#about" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition-all text-center">
+                Saiba Mais
+            </a>
+        </div>
+    </main>
+
+    <!-- Seção de Recursos -->
+    <section id="features" class="border-t border-slate-800 bg-slate-950/50 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 font-bold">
+                        01
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Rápido e Leve</h3>
+                    <p class="text-slate-400 text-sm">Carregamento otimizado hospedado diretamente pela infraestrutura do GitHub Pages.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 font-bold">
+                        02
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Design Moderno</h3>
+                    <p class="text-slate-400 text-sm">Interface limpa construída com Tailwind CSS para garantir responsividade total em dispositivos móveis e desktop.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 font-bold">
+                        03
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Pronto para Expansão</h3>
+                    <p class="text-slate-400 text-sm">Estrutura preparada para integrar APIs, bibliotecas JavaScript ou transformar em uma Web App completa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-slate-800 py-8 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>&copy; SAPP. Hospedado via GitHub Pages.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-slate-400 transition-colors">Termos</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
